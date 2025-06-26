@@ -35,4 +35,5 @@ def todo_update(request, id):
         todo = Todo.objects.get(id=id)
         todo.title = request.POST["title"]
         todo.save()
-        return HttpResponseRedirect("/")
+        return HttpResponseRedirect("/")  # help 
+
